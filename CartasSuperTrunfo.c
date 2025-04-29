@@ -54,7 +54,7 @@ int main (){
     scanf ("%f", &pib);
 
     float densidade = (float) populacao / area;
-    float pibpercapita = (float) pib / populacao;
+    float pibpercapita = (float) pib * 1000000000 / populacao;
 
     //Resultado da primeira leitura
     printf("Carta 01\n");
