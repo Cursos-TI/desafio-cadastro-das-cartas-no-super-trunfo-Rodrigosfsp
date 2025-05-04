@@ -55,12 +55,12 @@ int main (){
     printf("PIB:\n");
     scanf ("%f", &pib2);
 
-    float densidade1 = (float) populacao1 / area1;
-    float densidade2 = (float) populacao2 / area2;
+    float densidade1 = (float) (populacao1 / area1);
+    float densidade2 = (float) (populacao2 / area2);
     float pibpercapita1 = (float) (pib1 * 1000000000 / populacao1);
     float pibpercapita2 = (float) (pib2 * 1000000000 / populacao2);
-    float super1 = (float) pontos1 + populacao1 + area1 + pib1 + pibpercapita1 + 1 / densidade1 ;
-    float super2 = (float) pontos2 + populacao2 + area2 + pib2 + pibpercapita2 + 1 / densidade2 ;
+    float super1 = (float) (pontos1 + populacao1 + area1 + pib1 + pibpercapita1 + 1 / densidade1) ;
+    float super2 = (float) (pontos2 + populacao2 + area2 + pib2 + pibpercapita2 + 1 / densidade2) ;
 
     unsigned long int resultadopontos = pontos1 > pontos2;
     unsigned long int resultadopopulacao = populacao1 > populacao2;
